@@ -1,0 +1,2 @@
+Q1. What is a join in SQL?
+Join is a keyword used to merge two or more tables on the same key. 
