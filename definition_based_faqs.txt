@@ -5,12 +5,15 @@ Q2. Which SQL command is used to add rows to a table?
 Insert Command is used to add rows to an existing table
 
 Q3. What is OLAP and OLTP? And when do you denormalize data?
-OLAP is Online Analytical Processing. It only handles read operations and handle aggregated historical data. It uses denormalized data for multidimensional analysis to gather business intelligence. They can be massive and deal with complex data analysis algorithms. 
+OLAP is Online Analytical Processing. It only handles read operations and handle aggregated historical data. 
+It uses denormalized data for multidimensional analysis to gather business intelligence. They can be massive and deal with complex data analysis algorithms. 
 Denormalized data is used because joins are expensive and frequent query is executed on the tables. 
-OLTP is Online Transactional Processing. Handles read and write data. Uses normalised data to reduce data redundancy and records everyday business transactions. They are small in size(upto 10 GB) and deal with simple queries. 
+OLTP is Online Transactional Processing. Handles read and write data. Uses normalised data to reduce data redundancy and records everyday business transactions. 
+They are small in size(upto 10 GB) and deal with simple queries. 
 
 Q4. What's the difference between WHERE and HAVING?
-Where is a keyword used to filter the table before using groupby and having is used to exclude records after grouping. HAVING clause implements in column operation and can contain aggregate functions 
+Where is a keyword used to filter the table before using groupby and having is used to exclude records after grouping. 
+HAVING clause implements in column operation and can contain aggregate functions 
 
 Q5. When do you use the CASE WHEN function?
 When we need to evaluate multiple conditions and return once a condition is true. If no conditions are true and there is no else condition, then it will return null. 
@@ -21,9 +24,11 @@ A left join returns a table with all rows in the left table with null correspond
 Inner join only returns rows that has common rows in both (right & left) tables. 
 
 Q7. When would you use UNION vs UNION ALL? What if there were no duplicates?
-Union is a combination of left and right join which returns all rows in right and left table with null corresponding values if no values are found in rows of either tables. If the two tables have overlapping/duplicate values, it will only return one row, instead of two
+Union is a combination of left and right join which returns all rows in right and left table with null corresponding values if no values are found in rows of either tables.
+ If the two tables have overlapping/duplicate values, it will only return one row, instead of two
 Union all will also include the duplicate rows from both tables in the final output table. 
 
 Q8. What's the difference between COUNT and COUNT DISTINCT?
 Count will count all values in a window, even if it's a duplicate value or a null value.
-Count distinct eliminated duplicaates before count is applied and only counts unique values in a window and counts duplicate values as 1. Also, it does not count rows with null values
+Count distinct eliminated duplicaates before count is applied and only counts unique values in a window and counts duplicate values as 1. 
+Also, it does not count rows with null values
